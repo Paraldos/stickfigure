@@ -1,16 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhg53v4wd7ncw"]
+[gd_scene load_steps=3 format=3 uid="uid://dhg53v4wd7ncw"]
 
-[ext_resource type="PackedScene" uid="uid://b0adrudgcfwkt" path="res://stickman.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://bo4u60aurvwl2" path="res://stickman/player/player.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://b0adrudgcfwkt" path="res://stickman/stickman.tscn" id="2_fj7yv"]
 
 [node name="World" type="Node2D"]
 
-[node name="Stickman2" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(168, 32)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
 
-[node name="Stickman3" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(72, 32)
-play_animation = 1
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
-[node name="Stickman4" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(256, 32)
-play_animation = 2
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(8, 128)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 64, 472, 64, 472, -128, 528, 72, -32, 72, 0, -128)
+
+[node name="Line2D" type="Line2D" parent="StaticBody2D"]
+points = PackedVector2Array(0, -128, 0, 64, 472, 64, 472, -128)
+width = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
+offset_top = -128.0
+offset_right = 472.0
+offset_bottom = 64.0
+color = Color(0.45452422, 0.45452428, 0.45452422, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
+position = Vector2(56, 24)
+
+[node name="Stickman" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(400, 160)

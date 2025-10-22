@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo4u60aurvwl2"]
+
+[ext_resource type="PackedScene" uid="uid://b0adrudgcfwkt" path="res://stickman/stickman.tscn" id="1_gr78b"]
+[ext_resource type="Script" uid="uid://cbaeynwnau54m" path="res://stickman/player/player.gd" id="2_c27nb"]
+
+[node name="Player" instance=ExtResource("1_gr78b")]
+script = ExtResource("2_c27nb")
+color = Color(0.4509804, 0.74509805, 0.827451, 1)
