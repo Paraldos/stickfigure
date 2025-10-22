@@ -97,6 +97,83 @@ tracks/5/keys = {
 "values": [PackedVector2Array(-14, 30, -12, 30, -8, 20, -4, 14)]
 }
 
+[sub_resource type="Animation" id="Animation_xlwhs"]
+resource_name = "down"
+length = 0.15
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("display/Head:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -3), Vector2(1, -3), Vector2(-1, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("display/Torso:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, 0, 0, 5, 0, 12), PackedVector2Array(1, -1, 0, 4, 0, 10), PackedVector2Array(1, -1, -1, 4, 0, 9), PackedVector2Array(1, -1, -1, 3, 0, 8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("display/Front/FrontLeg:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-10, 27, -10, 25, -5, 18, -1, 12), PackedVector2Array(-4, 22, -3, 20, 5, 14, -2, 10), PackedVector2Array(2, 21, 1, 20, 7, 10, -1, 9), PackedVector2Array(1, 29, -1, 27, 0, 14, 0, 7)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("display/Back/BackLeg:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(1, 25, 1, 23, 10, 15, 1, 12), PackedVector2Array(2, 20, 2, 18, 11, 13, 2, 10), PackedVector2Array(7, 17, 6, 16, 12, 8, 3, 7), PackedVector2Array(6, 16, 5, 15, 10, 5, 3, 7)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("display/Back/BackArm:points")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(13, 9, 9, 4, 3, -2), PackedVector2Array(13, 4, 10, -2, 3, -2), PackedVector2Array(15, -1, 10, -6, 4, -2), PackedVector2Array(15, -6, 9, -6, 4, -2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("display/Front/FrontArm:points")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-11, 12, -11, 3, -4, -2), PackedVector2Array(-8, 8, -12, 2, -3, -3), PackedVector2Array(-15, -2, -7, -6, -3, -3), PackedVector2Array(-17, -3, -9, -7, -3, -3)]
+}
+
 [sub_resource type="Animation" id="Animation_4cfxp"]
 resource_name = "idle"
 loop_mode = 1
@@ -158,7 +235,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [PackedVector2Array(10, 30, 8, 30, 8, 20, 0, 14), PackedVector2Array(10, 30, 8, 30, 8, 20, 0, 16)]
+"values": [PackedVector2Array(11, 30, 8, 30, 8, 20, 0, 14), PackedVector2Array(11, 30, 8, 30, 8, 20, 0, 16)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -170,7 +247,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [PackedVector2Array(-14, 30, -12, 30, -8, 20, -4, 14), PackedVector2Array(-14, 30, -12, 30, -8, 20, -4, 16)]
+"values": [PackedVector2Array(-9, 30, -12, 30, -8, 20, -4, 14), PackedVector2Array(-9, 30, -12, 30, -8, 20, -4, 16)]
 }
 
 [sub_resource type="Animation" id="Animation_qlvw8"]
@@ -404,83 +481,6 @@ tracks/5/keys = {
 "values": [PackedVector2Array(-11, 12, -11, 3, -4, -2)]
 }
 
-[sub_resource type="Animation" id="Animation_xlwhs"]
-resource_name = "down"
-length = 0.15
-step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("display/Head:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -3), Vector2(1, -3), Vector2(-1, -5)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("display/Torso:points")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [PackedVector2Array(0, 0, 0, 5, 0, 12), PackedVector2Array(1, -1, 0, 4, 0, 10), PackedVector2Array(1, -1, -1, 4, 0, 9), PackedVector2Array(1, -1, -1, 3, 0, 8)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("display/Front/FrontLeg:points")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [PackedVector2Array(-10, 27, -10, 25, -5, 18, -1, 12), PackedVector2Array(-4, 22, -3, 20, 5, 14, -2, 10), PackedVector2Array(2, 21, 1, 20, 7, 10, -1, 9), PackedVector2Array(1, 29, -1, 27, 0, 14, 0, 7)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("display/Back/BackLeg:points")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [PackedVector2Array(1, 25, 1, 23, 10, 15, 1, 12), PackedVector2Array(2, 20, 2, 18, 11, 13, 2, 10), PackedVector2Array(7, 17, 6, 16, 12, 8, 3, 7), PackedVector2Array(6, 16, 5, 15, 10, 5, 3, 7)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("display/Back/BackArm:points")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [PackedVector2Array(13, 9, 9, 4, 3, -2), PackedVector2Array(13, 4, 10, -2, 3, -2), PackedVector2Array(15, -1, 10, -6, 4, -2), PackedVector2Array(15, -6, 9, -6, 4, -2)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("display/Front/FrontArm:points")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 0.04999999, 0.09999999, 0.15),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [PackedVector2Array(-11, 12, -11, 3, -4, -2), PackedVector2Array(-8, 8, -12, 2, -3, -3), PackedVector2Array(-15, -2, -7, -6, -3, -3), PackedVector2Array(-17, -3, -9, -7, -3, -3)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b51kg"]
 _data = {
 &"RESET": SubResource("Animation_novh3"),
@@ -633,5 +633,6 @@ default_color = Color(0, 0, 0, 1)
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 7)
 shape = SubResource("RectangleShape2D_iu0mg")
