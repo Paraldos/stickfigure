@@ -9,4 +9,8 @@ position = Vector2(168, 32)
 
 [node name="Stickman3" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(72, 32)
-animation = 1
+play_animation = 1
+
+[node name="Stickman4" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(256, 32)
+play_animation = 2
