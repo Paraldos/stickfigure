@@ -3,6 +3,11 @@ extends "res://stickman/stickman.gd"
 func _physics_process(delta):
 	_move(delta)
 	super(delta)
+	_attack()
+
+func _attack():
+	if Input.is_action_just_pressed("attack") and is_on_floor() and velocity.x == 0:
+		state_machine.travel('punch')
 
 func _move(delta):
 	velocity.y += gravity * delta
